@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+        integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css"
+        integrity="sha512-6/gTF62BJ06BajySRzTm7i8N2ZZ6StspU9uVWDdoBiuuNu5rs1a8VwiJ7skCz2BcvhpipLKfFerXkuzs+npeKA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css"
+        integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product Page</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="navigation">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                    <form class="form-icons-group">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cart2" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                            </svg>
+                        </a>
+                    </form>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="category-page.html">Categories</a>
+                            <!-- <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#">item 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 3</a>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="#">Snow Ski</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#">item 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#">item 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Backcountry</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#">item 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Skateboard</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#">item 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Brand</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#">item 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">item 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="form-icons">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- <---------- HEADER END ---------->
+    <!-- <---------- PAGE TITLE SECTION END ---------->
+    <section class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a><span>></span>
+                        </li>
+                        <li>
+                            <a href="#">Capita Mega Mercury Mens Snowboard 2023</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <---------- PAGE TITLE SECTION END ---------->
+    <!-- <---------- PRODUCT CONTAINER SECTION START ---------->
+    <section class="product-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="product">
+                        <div class="product-images">
+                            <a href="#">
+                                <img src="images/side-img.png" alt="image">
+                            </a>
+                            <a href="#">
+                                <img src="images/side-img.png" alt="image">
+                            </a>
+                            <a href="#">
+                                <img src="images/side-img.png" alt="image">
+                            </a>
+                        </div>
+                        <div class="main-product">
+                            <a href="#">
+                                <img src="images/item-1.png" alt="image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="similar-product">
+                        <h2> <b>Similar</b> Items </h2>
+                        <hr>
+                        <div class="product-container">
+                            <div class="items">
+                                <img src="images/s-item-1.png" alt="image">
+                                <h6>Jone Ultra Mind Expander Mens</h6>
+                                <del>1249.99</del>
+                                <div class="new-price">
+                                    <p>$1187.49</p>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <img src="images/s-item-2.png" alt="image">
+                                <h6>Jone Ultra Mind Expander Mens</h6>
+                                <del>1249.99</del>
+                                <div class="new-price">
+                                    <p>$1187.49</p>
+                                </div>
+                            </div>
+                            <div class="items d-none d-sm-block">
+                                <img src="images/s-item-3.png" alt="image">
+                                <h6>Jone Ultra Mind Expander Mens</h6>
+                                <del>1249.99</del>
+                                <div class="new-price">
+                                    <p>$1187.49</p>
+                                </div>
+                            </div>
+                            <div class="items d-none d-md-block">
+                                <img src="images/s-item-1.png" alt="image">
+                                <h6>Jone Ultra Mind Expander Mens</h6>
+                                <del>1249.99</del>
+                                <div class="new-price">
+                                    <p>$1187.49</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="about-product">
+                        <small><b>Capita</b></small>
+                        <h2>Capita Mega Mercury Mens Snowboard 2023</h2>
+                        <div class="rating">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </span>
+                            <a href="#">6 Reviews</a>
+                        </div>
+                        <div class="availability">
+                            <span>Available Online <i class="fa-solid fa-circle"></i> </span>
+                            <span>Click here TO View In Store</span>
+                        </div>
+                        <div class="size">
+                            <span class="d-block">Select Size(CM)</span>
+                            <div class="size-container">
+                                <div class="numbers">
+                                    153
+                                </div>
+                                <div class="numbers">
+                                    160
+                                </div>
+                                <div class="numbers">
+                                    157
+                                </div>
+                                <div class="numbers">
+                                    158 Wide
+                                </div>
+                            </div>
+                            <span class="d-block">Size Chart <img src="images/scale.svg" alt="image"></span>
+                        </div>
+                        <div class="price">
+                            <div class="d-flex align-items-center">
+                                <del class="w-50">$1,399.99</del>
+                                <div class="w-50">
+                                    <img src="images/low-price.svg" alt="image">
+                                    <span>Everyday Lower Pricing</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="new-price w-50">$1,119.99</div>
+                                <div class="w-50">
+                                    <img src="images/delivery.svg" alt="image">
+                                    <span>Free Shiping</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stock">
+                            <div class="stock-box">
+                                <span>
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 18 18" fill="none">
+                                        <g clip-path="url(#clip0_455_2104)">
+                                            <path
+                                                d="M0 9.52609C0 9.17457 0 8.82304 0 8.47155C0.0102304 8.42107 0.0262616 8.37097 0.0298123 8.31999C0.117527 7.06457 0.448732 5.87496 1.05577 4.77489C2.45509 2.23912 4.58199 0.687933 7.431 0.14189C7.7743 0.0761128 8.12453 0.046406 8.47155 0C8.82308 0 9.1746 0 9.52609 0C9.57134 0.00991401 9.6162 0.0257342 9.6619 0.028828C10.918 0.114538 12.1122 0.43699 13.2093 1.05078C16.1684 2.70638 17.7751 5.23871 17.9833 8.62374C18.0832 10.2471 17.7342 11.8005 16.9394 13.222C15.2882 16.1749 12.7544 17.7749 9.37668 17.9833C7.75342 18.0834 6.2048 17.7266 4.77725 16.9422C2.23775 15.5467 0.687652 13.4159 0.141749 10.5654C0.0760777 10.2225 0.0463708 9.8727 0 9.52609ZM9.00251 16.5914C13.1913 16.5882 16.587 13.1931 16.5914 9.00389C16.5958 4.81216 13.1872 1.40297 8.9951 1.40621C4.80632 1.40944 1.41064 4.80453 1.40621 8.99376C1.40181 13.1855 4.81037 16.5946 9.00251 16.5914Z"
+                                                fill="#005953" />
+                                            <path
+                                                d="M7.79425 10.3932C7.84347 10.3201 7.87444 10.2534 7.92327 10.2045C9.25087 8.87391 10.5811 7.54586 11.9087 6.21527C12.1267 5.9967 12.3702 5.87788 12.6826 5.97227C13.1458 6.11226 13.3302 6.65971 13.0448 7.05026C12.9967 7.116 12.9391 7.17545 12.8813 7.23328C11.3746 8.74098 9.86737 10.2482 8.36002 11.7552C7.94841 12.1667 7.57801 12.1651 7.16359 11.7509C6.46373 11.0512 5.76304 10.3524 5.06487 9.65107C4.78053 9.36539 4.73662 9.00659 4.9419 8.71353C5.18655 8.36425 5.66144 8.30343 5.98719 8.59614C6.23079 8.81499 6.4553 9.05514 6.68743 9.28668C7.03966 9.63803 7.39112 9.99011 7.79425 10.3932Z"
+                                                fill="#005953" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_455_2104">
+                                                <rect width="18" height="17.9998" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>
+                                    In Stock
+                                </span>
+                            </div>
+                            <div class="stock-box red">
+                                <span>
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 18 18" fill="none">
+                                        <g clip-path="url(#clip0_455_2117)">
+                                            <path
+                                                d="M0 9.52609C0 9.17457 0 8.82304 0 8.47155C0.0102304 8.42107 0.0262616 8.37097 0.0298123 8.31999C0.117527 7.06457 0.448732 5.87496 1.05577 4.77489C2.45509 2.23912 4.58199 0.687933 7.431 0.14189C7.7743 0.0761128 8.12453 0.046406 8.47155 0C8.82308 0 9.1746 0 9.52609 0C9.57134 0.00991401 9.6162 0.0257342 9.6619 0.028828C10.918 0.114538 12.1122 0.43699 13.2093 1.05078C16.1684 2.70638 17.7751 5.23871 17.9833 8.62374C18.0832 10.2471 17.7342 11.8005 16.9394 13.222C15.2882 16.1749 12.7544 17.7749 9.37668 17.9833C7.75342 18.0834 6.2048 17.7266 4.77725 16.9422C2.23775 15.5467 0.687652 13.4159 0.141749 10.5654C0.0760777 10.2225 0.0463708 9.8727 0 9.52609ZM9.00251 16.5914C13.1913 16.5882 16.587 13.1931 16.5914 9.00389C16.5958 4.81216 13.1872 1.40297 8.9951 1.40621C4.80632 1.40944 1.41064 4.80453 1.40621 8.99376C1.40181 13.1855 4.81037 16.5946 9.00251 16.5914Z"
+                                                fill="#BD000E" />
+                                            <path
+                                                d="M8.43686 12.3118C8.43686 12.2098 8.43686 12.1423 8.43686 12.0747C8.43686 9.50934 8.43665 6.94393 8.4371 4.37856C8.43718 4.00042 8.65943 3.75194 8.99531 3.75025C9.2908 3.74874 9.53531 3.97138 9.55922 4.26634C9.56442 4.3304 9.56161 4.39512 9.56161 4.45952C9.56171 7.00148 9.56168 9.54348 9.56168 12.0854C9.56168 12.1485 9.56168 12.2115 9.56168 12.3098C9.62953 12.248 9.6759 12.2091 9.71861 12.1665C10.3319 11.5539 10.9459 10.9419 11.557 10.3271C11.7122 10.1709 11.8902 10.0877 12.1104 10.1314C12.5183 10.2122 12.6967 10.6967 12.4417 11.026C12.3989 11.0813 12.3473 11.13 12.2977 11.1797C11.3424 12.1377 10.3865 13.0953 9.43128 14.0534C9.1738 14.3116 8.82962 14.3155 8.57548 14.0607C7.6077 13.0903 6.63789 12.1219 5.67532 11.1463C5.57737 11.047 5.4898 10.913 5.45598 10.7802C5.39347 10.5349 5.51958 10.3041 5.73206 10.1889C5.94535 10.0732 6.19292 10.1042 6.38396 10.2721C6.42347 10.3069 6.45972 10.3454 6.49698 10.3827C7.08929 10.9748 7.68143 11.5672 8.27398 12.1591C8.31789 12.2029 8.36433 12.2439 8.43686 12.3118Z"
+                                                fill="#BD000E" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_455_2117">
+                                                <rect width="18" height="17.9998" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span>
+                                    Low In Stock (1)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <div>
+                                <p>
+                                    or 4 interest free payments
+                                    of $279.99
+                                </p>
+                                <img src="images/afterpay.png" alt="image">
+                            </div>
+                            <div>
+                                <img src="images/verical-line.svg" alt="image" class="lines">
+                            </div>
+                            <div>
+                                <p>
+                                    or Zip it from $10/week with
+                                </p>
+                                <img src="images/zip.svg" alt="image">
+                                <img src="images/i-img.svg" alt="image">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity">
+                                <div class="qty">
+                                    QTY <br> 2
+                                </div>
+                                <div class="arrows">
+                                    <span><i class="fa-solid fa-chevron-up"></i></span>
+                                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <a href="checkout.html" class="add-cart">Add To Cart</a>
+                        </div>
+                        <div class="shiping">
+                            <h6>Shipping & Returns</h6>
+                            <p>
+                                Please visit our <a href="#">Shipping </a> and <a href="#"> Returns </a> pages for more
+                                information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <---------- PRODUCT CONTAINER SECTION END ---------->
+    <!-- <---------- PRODUCT-DETAIL SECTION START ---------->
+    <section class="product-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="description">
+                        <h2> <b>Product</b> Details </h2>
+                        <hr>
+                        <p>
+                            Behold! The consummate anytime, any-place, all-terrain, snow-slaying device: The MEGA MERC.
+                            Inspired by the on-slope versatility of the Mercury series, the MEGA MERC mimics its proven
+                            technical design lines while packing a powerful punch of serious construction upgrades.
+                            Featuring an FSC Certified D Thermopolymer Starship Core™ including ultralight
+                            post-consumer recycled plastics, the MEGA MERC is bolstered by a MEGACARBON™ Array and a
+                            MEGALITE SKIN™ topsheet, yielding an exclusive performance to weight ratio for serious
+                            descents. The MEGA MERC now comes with a factory-direct Moonshot Omni-Tune™ optimizing
+                            high-speed performance while riding both regular and switch. Designed for power when you
+                            want it and float when you need it, the MEGA MERC is the utilitarian, shred-anything,
+                            ultra-premium snowboard you can trust to handle it all.
+                        </p>
+                        <p>
+                            <b> Please Note: </b>To minimise waste the base is die cut which means that some boards will
+                            have a
+                            black base and some will have a white base. This is random and can't be selected. If you
+                            have a preference please give us a call before you order and we'll tell you what we have.
+                        </p>
+                        <h5>Ability Level:</h5>
+                        <p>Advanced - Expert</p>
+                        <h5>Terrain:</h5>
+                        <p>All Mountain</p>
+                        <div class="description-img">
+                            <img src="images/map.png" alt="image">
+                        </div>
+                        <h5>Rocker Profile:</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Rocker</a><span>/</span>
+                            </li>
+                            <li>
+                                <a href="#">Camber</a><span>/</span>
+                            </li>
+                            <li>
+                                <a href="#">Rocker</a>
+                            </li>
+                        </ul>
+                        <div class="description-img">
+                            <img src="images/demo-img.png" alt="image">
+
+                        </div>
+                        <p>Camber - This revolutionary all-terrain shape provides the best of both worlds. It has a
+                            raised camber platform through the inserts to retain high-speed edge hold
+                            through variable terrain, elevated contact points to land and float in powder, and Flat Kick
+                            tip and tail arcs for faster, more aggressive transitions.
+                        </p>
+                        <h5>Flex:</h5>
+                        <div class="description-img">
+                            <img src="images/chart.png" alt="image">
+                        </div>
+                        <h5>Core:</h5>
+                        <p>
+                            FSC® CERTIFIED 3D THERMOPOLYMER STARSHIP CORE™
+                        </p>
+                        <br>
+                        <p>
+                            Utilising an advance electronic sorting system allows us to select only the lightest grade
+                            Poplar. Comparable in weight to Paulownia, while retaining all the poppiness
+                            of Poplar, we then achieve further weight reduction and response by adding inlaid recycled
+                            thermopolymer channels—this mega premium core will blast you into
+                            space and beyond.
+                        </p>
+                        <div class="description-img">
+                            <img src="images/image 2.png" alt="image">
+                        </div>
+                        <h5>Glass:</h5>
+                        <p>
+                            HOLYSHEET™ FIBERGLASS MAGIC BEAN™ RESIN Triax/Biax HOLYSHEET™ has higher glass to weight
+                            ratio than normal fiberglass. Impregnated with high performance
+                            plant based MAGIC BEAN™ RESIN for the most powerful and dynamic ride.
+                        </p>
+                        <h5>Base:</h5>
+                        <p>
+                            HYPERDRIVE™ BASE Exclusively formulated, sintered, ultra-high molecular weight, ultra-high
+                            density polyethylene, custom engineered with special additives. Rated for the most depraved
+                            speed junkies ONLY
+                        </p>
+                        <p>
+                            Die-cut Base
+                        </p>
+                        <h5>Sidewalls:</h5>
+                        <p>
+                            Full ABS sidewalls
+                        </p>
+                        <h5>Edges:</h5>
+                        <p>
+                            360 Degree HRC Steel Edges
+                        </p>
+                        <h5>Top Sheet:</h5>
+                        <p>
+                            MEGALITE SKIN™ TOPSHEET Super thin yet durable matte lamina for weight reduction over our
+                            regular topsheets.
+                        </p>
+                        <h5>Shape:</h5>
+                        <p>
+                            New Age Directional – NEW AGE DIRECTIONAL sidecuts are progressive sidecuts, which also
+                            incorporate a reverse sidecut arc in the midsection of the board. Due to a reduced effective
+                            edge as a result of hybrid camber shapes, this reverse camber arc provides a point of
+                            contact to retain control throughout the turn and is affectionately referred to as DEATH
+                            GRIP™.
+
+                        </p>
+                        <h5>Binding Mount Pattern:</h5>
+                        <p>
+                            Stainless Steel 4 x 2 Inserts
+                        </p>
+                        <h5>Warranty:</h5>
+                        <p>
+                            1 Year
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <---------- PRODUCT-DETAIL SECTION END ---------->
+    <!-- <---------- SUMMER SALE SECTION START ---------->
+    <section class="summer-sale">
+        <div class="container">
+            <div class="row align-items-center sale-title">
+                <div class="col-md-8 col-xl-6">
+                    <h2>HEADING NORTH FOR SOME</h2>
+                    <P>POW THIS SUMMER?</P>
+                </div>
+                <div class="col-md-4 col-xl-6 position-relative d-none d-md-block">
+                    <img src="images/v-lines.png" alt="image" class="virtical-lines">
+                    <a href="#" class="cta-btn">
+                        Shop Snowboard
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sale-slider">
+                    <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="sale-content">
+                            <div class="img-wrap">
+                                <img src="images/item-1.png" alt="image">
+                            </div>
+                            <div class="discount-lable">
+                                30% <br> Off
+                            </div>
+                            <div class="title">
+                                Capita Mega Mercury
+                                Mens Snowboard 2023
+                            </div>
+                            <div class="price">
+                                <del>$1,399.99</del>
+                                <p>$979.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="sale-content">
+                            <div class="img-wrap">
+                                <img src="images/item-2.png" alt="image">
+                            </div>
+                            <div class="discount-lable">
+                                5% <br> Off
+                            </div>
+                            <div class="title">
+                                Capita Mega Mercury
+                                Mens Snowboard 2023
+                            </div>
+                            <div class="price">
+                                <del>$1,399.99</del>
+                                <p>$979.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="sale-content">
+                            <div class="img-wrap">
+                                <img src="images/item-3.png" alt="image">
+                            </div>
+                            <div class="discount-lable">
+                                5% <br> Off
+                            </div>
+                            <div class="title">
+                                Capita Mega Mercury
+                                Mens Snowboard 2023
+                            </div>
+                            <div class="price">
+                                <del>$1,399.99</del>
+                                <p>$979.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="sale-content">
+                            <div class="img-wrap">
+                                <img src="images/item-4.png" alt="image">
+                            </div>
+                            <div class="discount-lable">
+                                5% <br> Off
+                            </div>
+                            <div class="title">
+                                Capita Mega Mercury
+                                Mens Snowboard 2023
+                            </div>
+                            <div class="price">
+                                <del>$1,399.99</del>
+                                <p>$979.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="sale-content">
+                            <div class="img-wrap">
+                                <img src="images/item-1.png" alt="image">
+                            </div>
+                            <div class="discount-lable">
+                                30% <br> Off
+                            </div>
+                            <div class="title">
+                                Capita Mega Mercury
+                                Mens Snowboard 2023
+                            </div>
+                            <div class="price">
+                                <del>$1,399.99</del>
+                                <p>$979.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div class="col-12 d-block d-md-none position-relative">
+                        <img src="images/v-lines.png" alt="image" class="virtical-lines">
+                        <a href="#" class="cta-btn">
+                            Shop Snowboard
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <---------- SUMMER SALE SECTION END ---------->
+    <!-- <---------- CONTACT SECTION START ---------->
+    <section class="contact">
+        <div class="container">
+            <div class="row text-center h-200">
+                <h3>Lorem Ipsum is simply dummy</h3>
+                <h4>TEXT OF THE PRINTING</h4>
+            </div>
+        </div>
+    </section>
+    <!-- <---------- CONTACT SECTION END ---------->
+    <!-- <---------- CONTENT-IMAGE SECTION START ---------->
+    <section class="content-img mb-30">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="inner-container-1">
+                        <img src="images/dolar.png" alt="image">
+                        <p>Not happy with your purchase?</p>
+                        <b>100% oney back guarantee</b>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="inner-container-2">
+                        <img src="images/message.png" alt="image">
+                        <p>Not happy with your purchase?</p>
+                        <b>100% oney back guarantee</b>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="inner-container-3">
+                        <img src="images/delivery.png" alt="image">
+                        <p>Not happy with your purchase?</p>
+                        <b>100% oney back guarantee</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- <---------- CONTENT-IMAGE SECTION END ---------->
+    <!-- <---------- FOOTER START ---------->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="image">
+                        </a>
+                    </div>
+                    <div class="address mt-3">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <span>
+                            12 Old Northern Road, Baulkham Hills, NSW, 2153
+                        </span>
+                    </div>
+                    <div class="call mt-3">
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span>
+                            <a href="tel:+5092937557">(509) 293-7557</a>
+                        </span>
+                    </div>
+                    <ul class="social-link mt-3">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-xl-3">
+                            <div class="footer-links">
+                                <h5>USEFUL LINKS</h5>
+                                <ul class="menu-links">
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Snowboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Snow Ski</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Accessories</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Backcountry</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-3">
+                            <div class="footer-links">
+                                <br>
+                                <br>
+                                <ul class="menu-links">
+                                    <li>
+                                        <a href="#">Skateboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Special Offer</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Brands</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ClientReview</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-4">
+                            <div class="footer-links">
+                                <h5>SUPPORT & HELP</h5>
+                                <ul class="menu-links">
+                                    <li>
+                                        <a href="#">My Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Size & Buying Guides</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Term & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-links">
+                        <h5>SUBSCRIBE OUR NEWSLETTER</h5>
+                        <form action="#">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="ENTER YOUR EMAIL ADDRESS"
+                                    aria-describedby="button-addon2">
+                                <a href="#" class="cta-btn red">
+                                    Send
+                                </a>
+                            </div>
+                        </form>
+                        <p>
+                            Sign up to our newsletter and as a welcome gift you’ll get a 5% discount on your next order.
+                        </p>
+                        <a href="#">View More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <---------- FOOTER END ---------->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"
+        integrity="sha512-QDsjSX1mStBIAnNXx31dyvw4wVdHjonOwrkaIhpiIlzqGUCdsI62MwQtHpJF+Npy2SmSlGSROoNWQCOFpqbsOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
